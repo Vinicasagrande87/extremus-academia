@@ -1,2 +1,41 @@
 // For information on how to create your own theme, please refer to:
 // https://ionicframework.com/docs/theming/
+
+// Paleta de marca do Ulbra Gym (verde + dourado da rosa), substituindo o
+// azul padrão do Ionic. Cores extraídas direto da arte oficial da logo.
+
+:root {
+  /** primary — verde da marca, usado em cabeçalhos e botões **/
+  --ion-color-primary: #025e55;
+  --ion-color-primary-rgb: 2, 94, 85;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255, 255, 255;
+  --ion-color-primary-shade: #02534b;
+  --ion-color-primary-tint: #1b6f66;
+
+  /** secondary — dourado da marca **/
+  --ion-color-secondary: #b8863a;
+  --ion-color-secondary-rgb: 184, 134, 58;
+  --ion-color-secondary-contrast: #ffffff;
+  --ion-color-secondary-contrast-rgb: 255, 255, 255;
+  --ion-color-secondary-shade: #a27633;
+  --ion-color-secondary-tint: #bf934e;
+}
+
+.ion-color-primary {
+  --ion-color-base: var(--ion-color-primary);
+  --ion-color-base-rgb: var(--ion-color-primary-rgb);
+  --ion-color-contrast: var(--ion-color-primary-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-primary-contrast-rgb);
+  --ion-color-shade: var(--ion-color-primary-shade);
+  --ion-color-tint: var(--ion-color-primary-tint);
+}
+
+.ion-color-secondary {
+  --ion-color-base: var(--ion-color-secondary);
+  --ion-color-base-rgb: var(--ion-color-secondary-rgb);
+  --ion-color-contrast: var(--ion-color-secondary-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-secondary-contrast-rgb);
+  --ion-color-shade: var(--ion-color-secondary-shade);
+  --ion-color-tint: var(--ion-color-secondary-tint);
+}
