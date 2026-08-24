@@ -3,10 +3,12 @@ import { NgIf } from '@angular/common';
 import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 import { SplashScreen } from '@capacitor/splash-screen';
 
-const DURACAO_MINIMA_MS = 1300;
-// tempo mínimo que a marca fica visível, mesmo se a checagem de sessão for
-// instantânea — é isso que dá a sensação "iFood" (marca sempre com o mesmo
-// ritmo, nunca pisca rápido demais nem trava)
+const ATRASO_LOGO_MS = 2000;
+// tela verde sozinha por esse tempo antes da marca (rosa + "ulbra gym")
+// começar a aparecer
+const DURACAO_MINIMA_MS = 3100;
+// tempo total da splash (verde sozinho + marca aparecendo + um instante
+// com a marca já visível) antes de começar a sair
 const DURACAO_SAIDA_MS = 400;
 // tempo do fade de saída, precisa bater com a transição no CSS
 
@@ -24,11 +26,9 @@ export class AppComponent implements OnInit {
   saindo = false;
 
   ngOnInit() {
-    // deixa o navegador pintar o quadro antes de iniciar a animação, senão
-    // o CSS de entrada às vezes não dispara (elemento já nasce "visível")
-    requestAnimationFrame(() => requestAnimationFrame(() => {
+    setTimeout(() => {
       this.logoVisivel = true;
-    }));
+    }, ATRASO_LOGO_MS);
 
     setTimeout(() => {
       this.saindo = true;
