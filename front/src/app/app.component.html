@@ -1,3 +1,11 @@
 <ion-app>
+  <div class="app-splash" *ngIf="mostrarSplash" [class.is-out]="saindo">
+    <img
+      class="app-splash-logo"
+      [class.is-visible]="logoVisivel"
+      src="assets/logo-ulbra-gym.png"
+      alt="Ulbra Gym">
+  </div>
+
   <ion-router-outlet></ion-router-outlet>
 </ion-app>
