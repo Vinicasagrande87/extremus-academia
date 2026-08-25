@@ -11,7 +11,6 @@ exports.seed = async function(knex) {
         {
             nome: 'Admin',
             email: 'admin@extremusacademia.com',
-            // TODO: trocar pelo e-mail real do admin da Extremus antes de rodar o seed
             senha: senhaCriptografada
         }
     ]);
