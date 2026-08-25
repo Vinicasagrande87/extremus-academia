@@ -1,4 +1,4 @@
-# Ulbra Gym
+# Extremus Academia
 
 Sistema completo de gestão para academias: cadastro de alunos, montagem de treinos com demonstração em vídeo, controle financeiro de planos e pagamentos, e ficha de anamnese. Multi-papel (aluno, professor, administrador), com aplicativo mobile via Capacitor.
 
@@ -50,7 +50,7 @@ Sistema completo de gestão para academias: cadastro de alunos, montagem de trei
 ## Estrutura do projeto
 
 ```
-academia ulbra/
+extremus-academia/
 ├── back/                   # API REST (Node/Express)
 │   ├── controllers/        # regras de negócio por recurso
 │   ├── middlewares/        # autenticação (JWT) e validação de entrada

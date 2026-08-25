@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule, AlertController } from '@ionic/angular';
+import { IonicModule } from '@ionic/angular';
 import { HttpClient } from '@angular/common/http';
 import { Router, RouterModule } from '@angular/router';
 import { addIcons } from 'ionicons';
@@ -9,8 +9,7 @@ import {
   logOutOutline,
   barbellOutline,
   cardOutline,
-  personOutline,
-  waterOutline
+  personOutline
 } from 'ionicons/icons';
 import { environment } from '../../../environments/environment';
 // ajuste o caminho conforme o nível real da pasta "environments"
@@ -33,15 +32,13 @@ export class HomeAlunoPage implements OnInit {
   constructor(
     private router: Router,
     private http: HttpClient,
-    private authService: AuthService,
-    private alertController: AlertController
+    private authService: AuthService
   ) {
     addIcons({
       'log-out-outline': logOutOutline,
       'barbell-outline': barbellOutline,
       'card-outline': cardOutline,
-      'person-outline': personOutline,
-      'water-outline': waterOutline
+      'person-outline': personOutline
     });
   }
 
@@ -61,15 +58,6 @@ export class HomeAlunoPage implements OnInit {
       },
       error: (err) => console.error('Erro ao verificar situação do plano:', err)
     });
-  }
-
-  async mostrarInfoPiscina() {
-    const alert = await this.alertController.create({
-      header: 'Piscina Olímpica',
-      message: 'Em breve você vai poder se inscrever direto por aqui nas aulas de natação (adulto e infantil) e hidroginástica. Fique de olho nas novidades!',
-      buttons: ['Entendi']
-    });
-    await alert.present();
   }
 
   logout() {

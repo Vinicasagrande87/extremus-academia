@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule, AlertController } from '@ionic/angular';
+import { IonicModule } from '@ionic/angular';
 import { Router, RouterModule } from '@angular/router';
 import { addIcons } from 'ionicons';
 import {
@@ -11,8 +11,7 @@ import {
   fitnessOutline,
   cardOutline,
   pricetagOutline,
-  medkitOutline,
-  waterOutline
+  medkitOutline
 } from 'ionicons/icons';
 import { AuthService } from '../../services/auth';
 // ajuste o caminho conforme a pasta real onde o auth.ts está no seu projeto
@@ -33,8 +32,7 @@ export class HomeProfessorPage implements OnInit {
 
   constructor(
     private router: Router,
-    private authService: AuthService,
-    private alertController: AlertController
+    private authService: AuthService
   ) {
     addIcons({
       'log-out-outline': logOutOutline,
@@ -43,8 +41,7 @@ export class HomeProfessorPage implements OnInit {
       'fitness-outline': fitnessOutline,
       'card-outline': cardOutline,
       'pricetag-outline': pricetagOutline,
-      'medkit-outline': medkitOutline,
-      'water-outline': waterOutline
+      'medkit-outline': medkitOutline
     });
   }
 
@@ -68,14 +65,5 @@ export class HomeProfessorPage implements OnInit {
 
   logout() {
     this.authService.logout();
-  }
-
-  async mostrarInfoPiscina() {
-    const alert = await this.alertController.create({
-      header: 'Piscina Olímpica',
-      message: 'Novo espaço da academia: natação (adulto e infantil) e hidroginástica. O módulo de turmas e matrícula ainda está sendo construído.',
-      buttons: ['Entendi']
-    });
-    await alert.present();
   }
 }

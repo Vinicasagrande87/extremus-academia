@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title><img src="assets/rosa-ulbra.png" class="rosa-titulo" alt="">{{ isAdmin ? 'Painel do Admin' : 'Painel do Professor' }}</ion-title>
+    <ion-title><img src="assets/logo-extremus-icone.png" class="marca-titulo" alt="">{{ isAdmin ? 'Painel do Admin' : 'Painel do Professor' }}</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="logout()" color="light">
         <ion-icon name="log-out-outline" class="icone-sair"></ion-icon>
@@ -59,18 +59,6 @@
             <ion-icon name="medkit-outline" size="large" color="danger"></ion-icon>
             <ion-card-title>Anamnese</ion-card-title>
             <p>Ficha de saúde e contato de emergência dos alunos</p>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-
-      <!-- Piscina Olímpica (novidade, ainda sem tela própria) -->
-      <ion-col size="12" size-md="6">
-        <ion-card (click)="mostrarInfoPiscina()" button class="menu-card card-novidade">
-          <ion-badge color="secondary" class="badge-novidade">Novidade</ion-badge>
-          <ion-card-content class="ion-text-center">
-            <ion-icon name="water-outline" size="large" color="secondary"></ion-icon>
-            <ion-card-title>Piscina Olímpica</ion-card-title>
-            <p>Natação e hidroginástica — módulo em construção</p>
           </ion-card-content>
         </ion-card>
       </ion-col>

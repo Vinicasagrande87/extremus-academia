@@ -10,7 +10,8 @@ exports.seed = async function(knex) {
     await knex('admins').insert([
         {
             nome: 'Admin',
-            email: 'admin@academiaulbra.com',
+            email: 'admin@extremusacademia.com',
+            // TODO: trocar pelo e-mail real do admin da Extremus antes de rodar o seed
             senha: senhaCriptografada
         }
     ]);

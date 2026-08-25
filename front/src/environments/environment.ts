@@ -1,7 +1,6 @@
 export const environment = {
   production: true,
-  apiUrl: 'https://ulbra-gym.vercel.app'
-  // esse arquivo é usado automaticamente pelo "ionic build" em modo produção
-  // (troca o environment.ts pelo environment.prod.ts) — aponta direto pro
-  // backend hospedado no Vercel, não pro localhost
+  apiUrl: 'https://extremus-academia-back.vercel.app'
+  // TODO: trocar pela URL real do backend da Extremus assim que o projeto
+  // Vercel dela for criado (ver checklist de novo cliente)
 };

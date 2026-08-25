@@ -4,7 +4,7 @@ import { IonApp, IonRouterOutlet } from '@ionic/angular/standalone';
 import { SplashScreen } from '@capacitor/splash-screen';
 
 const ATRASO_LOGO_MS = 2000;
-// tela verde sozinha por esse tempo antes da marca (rosa + "ulbra gym")
+// tela de fundo sozinha por esse tempo antes da marca da Extremus
 // começar a aparecer
 const DURACAO_MINIMA_MS = 3100;
 // tempo total da splash (verde sozinho + marca aparecendo + um instante

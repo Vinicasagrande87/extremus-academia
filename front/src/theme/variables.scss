@@ -1,25 +1,28 @@
 // For information on how to create your own theme, please refer to:
 // https://ionicframework.com/docs/theming/
 
-// Paleta de marca do Ulbra Gym (verde + dourado da rosa), substituindo o
-// azul padrão do Ionic. Cores extraídas direto da arte oficial da logo.
+// Paleta de marca da Extremus Academia (azul + dourado, referência Boca
+// Juniors), substituindo o azul padrão do Ionic. Dourado extraído por
+// varredura de pixel direto da arte oficial da logo; o azul é o tom do
+// fundo original da logo, um pouco clareado pra não ficar ilegível em
+// cabeçalho/botão (o fundo puro é quase preto de tão escuro).
 
 :root {
-  /** primary — verde da marca, usado em cabeçalhos e botões **/
-  --ion-color-primary: #025e55;
-  --ion-color-primary-rgb: 2, 94, 85;
+  /** primary — azul marinho da marca, usado em cabeçalhos e botões **/
+  --ion-color-primary: #0a2f6b;
+  --ion-color-primary-rgb: 10, 47, 107;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
-  --ion-color-primary-shade: #02534b;
-  --ion-color-primary-tint: #1b6f66;
+  --ion-color-primary-shade: #092a5e;
+  --ion-color-primary-tint: #23457c;
 
-  /** secondary — dourado da marca **/
-  --ion-color-secondary: #b8863a;
-  --ion-color-secondary-rgb: 184, 134, 58;
-  --ion-color-secondary-contrast: #ffffff;
-  --ion-color-secondary-contrast-rgb: 255, 255, 255;
-  --ion-color-secondary-shade: #a27633;
-  --ion-color-secondary-tint: #bf934e;
+  /** secondary — dourado da marca (extraído direto da logo) **/
+  --ion-color-secondary: #f0b716;
+  --ion-color-secondary-rgb: 240, 183, 22;
+  --ion-color-secondary-contrast: #1c1c1c;
+  --ion-color-secondary-contrast-rgb: 28, 28, 28;
+  --ion-color-secondary-shade: #d3a113;
+  --ion-color-secondary-tint: #f2c239;
 }
 
 .ion-color-primary {

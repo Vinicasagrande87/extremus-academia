@@ -13,13 +13,13 @@ const transporter = nodemailer.createTransport({
 
 async function enviarEmailCadastroAluno({ nome, email, senha }) {
     const mailOptions = {
-        from: `"Academia Ulbra" <${process.env.EMAIL_USER}>`,
+        from: `"Extremus Academia" <${process.env.EMAIL_USER}>`,
         to: email,
-        subject: 'Seu cadastro foi realizado - Academia Ulbra',
+        subject: 'Seu cadastro foi realizado - Extremus Academia',
         html: `
             <div style="font-family: Arial, sans-serif; max-width: 500px; margin: 0 auto;">
-                <h2 style="color: #3880ff;">Bem-vindo(a), ${nome}!</h2>
-                <p>Seu cadastro na Academia Ulbra foi realizado com sucesso. Abaixo estão seus dados de acesso ao aplicativo:</p>
+                <h2 style="color: #0a2f6b;">Bem-vindo(a), ${nome}!</h2>
+                <p>Seu cadastro na Extremus Academia foi realizado com sucesso. Abaixo estão seus dados de acesso ao aplicativo:</p>
                 <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                     <tr>
                         <td style="padding: 8px; font-weight: bold;">E-mail:</td>
