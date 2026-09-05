@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar color="primary">
-    <ion-title><img src="assets/logo-extremus-icone.png" class="marca-titulo" alt="">{{ isAdmin ? 'Painel do Admin' : 'Painel do Professor' }}</ion-title>
+    <ion-title>{{ isAdmin ? 'Painel do Admin' : 'Painel do Professor' }}</ion-title>
     <ion-buttons slot="end">
       <ion-button (click)="logout()" color="light">
         <ion-icon name="log-out-outline" class="icone-sair"></ion-icon>
